@@ -13,13 +13,7 @@ export function SidebarNav({ className, items, ...props }: SidebarNavProps) {
   const { pathname } = useLocation()
 
   return (
-    <nav
-      className={cn(
-        'flex space-x-2 lg:flex-col lg:space-x-0 lg:space-y-1',
-        className,
-      )}
-      {...props}
-    >
+    <nav className={cn('flex lg:flex-col lg:space-x-0', className)} {...props}>
       {items.map((item) => (
         <Link
           data-current={pathname === item.to}

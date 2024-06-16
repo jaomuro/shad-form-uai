@@ -71,8 +71,8 @@ export function ArrayFieldForm() {
   }
 
   return (
-    <div className="">
-      <Card className="w-[800px]">
+    <div className="flex justify-center mt-12">
+      <Card className="w-[800px] ">
         <CardHeader>
           <CardTitle>Formulário de tasks</CardTitle>
         </CardHeader>
