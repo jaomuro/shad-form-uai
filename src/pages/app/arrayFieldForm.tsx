@@ -1,5 +1,11 @@
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card'
 import {
   Form,
   FormControl,
@@ -60,7 +66,7 @@ export function ArrayFieldForm() {
           </pre>
         ),
       })
-    }, 1500)
+    }, 800)
   }
   const handleRemoveFields = (index: number) => {
     remove(index)
@@ -75,6 +81,11 @@ export function ArrayFieldForm() {
       <Card className="w-[800px] ">
         <CardHeader>
           <CardTitle>Formulário de tasks</CardTitle>
+          <CardDescription>
+            Os campos título, descrição e link são definidos como array fields
+            no schema, é obrigatório pelo menos um objeto do arrayfields, a
+            propriedade link é opcional.
+          </CardDescription>
         </CardHeader>
         <CardContent>
           <Form {...form}>

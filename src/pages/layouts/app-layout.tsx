@@ -34,14 +34,6 @@ export function AppLayout() {
       </aside>
 
       <main className="overflow-auto col-start-2 px-4 pt-12 col-span-6">
-        <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
-          Formulário array field dinâmico
-        </h3>
-        <p>
-          campos título, descrição e link definidos como array de objetos com
-          essas propriedades, sendo obrigatórios pelo menos 1 item nesse array,
-          campo link opcional.
-        </p>
         <Outlet />
       </main>
     </div>
